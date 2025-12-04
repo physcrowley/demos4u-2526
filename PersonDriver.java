@@ -8,9 +8,11 @@ public class PersonDriver {
     public static void main(String[] args) {
         // une instance de Person
         Person me = new Person();
-        Person you = new Person("Enahoj", "Eod");
+        Person you = new Person("Chartruse", "Chad");
+        you.setFirst("Aquamarine"); 
 
         IO.println("Moi : " + me);
         IO.println("Toi : " + you);
     }
+
 }

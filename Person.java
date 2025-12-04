@@ -9,9 +9,9 @@ public class Person {
      * ATTRIBUTS
      */
 
-    String name;
-    String firstName;
-    String lastName;
+    private String name;
+    private String firstName;
+    private String lastName;
 
     /*
      * MÉTHODES
@@ -20,18 +20,30 @@ public class Person {
     Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.name = firstName + " " + lastName;
+        setName();
     }
 
     Person() {
         this("Johane", "Doe");
     }
 
+    private void setName() {
+        this.name = this.firstName + " " + this.lastName;
+    }
+
+    public void setFirst(String firstName) {
+        this.firstName = firstName;
+        setName();
+    }
+
+    public String getFirst() {
+        return firstName;
+    }
+
     @Override
     public String toString() {
         return name;
     }
-
 
     @Override
     public int hashCode() {
