@@ -1,0 +1,28 @@
+' Copier-coller sur https://www.planttext.com/ 
+' ou activer l'extension PlantUML (jebbs)
+
+@startuml gabarit
+
+' https://plantuml.com/fr/theme
+'    favoris : mars, plain, mono, toy, vibrant, sunlust, reddress-lightgreen, toy, crt-green, sketchy-outline
+!theme toy
+
+' garder les symboles de visibilité simples 
+' skinparam classAttributeIconSize 0
+
+
+' https://plantuml.com/fr/class-diagram
+
+' objets
+class Person {
+    ~name: String
+    ~job: Job
+    ~residence: Residence
+    -{static}population: int
+    +Person(String, Job, Residence): Person
+    +Person(String): Person
+    +Person(): Person
+    +{static}getPopulation(): int
+    +toString(): String
+}
+@enduml

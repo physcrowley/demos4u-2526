@@ -24,12 +24,16 @@ public class PersonDriver {
          * Avoir plusieurs formes de Person s'appelle le
          * POLYMORPHISME.
          */
+        IO.println(Person.getPopulation()); // appelle d'une méthode STATIC 
+
         Person[] people = {
             new Person("Jacob"),
             new Mister("Xavier"),
             new Madame("Isla")
         };
 
+        IO.println(Person.getPopulation());
+        
         for (Person person : people) {
             IO.println(person);
         }
