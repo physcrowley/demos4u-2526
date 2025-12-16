@@ -1,0 +1,5 @@
+' liste des themes/skins disponibles
+@startjson themes
+%get_all_theme()
+@endjson
+
