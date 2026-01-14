@@ -12,6 +12,8 @@
 
 
 ' https://plantuml.com/fr/class-diagram
+!theme sunlust
+
 
 ' objets
 class Person {
@@ -25,4 +27,17 @@ class Person {
     +{static}getPopulation(): int
     +toString(): String
 }
+
+' ajouté le 14 janvier : classes enfants
+
+class Mister extends Person {
+    +Mister(String): Mister
+    +toString(): String
+}
+
+class Madame extends Person {
+    +Madame(String): Madame
+    +toString(): String
+}
+
 @enduml
